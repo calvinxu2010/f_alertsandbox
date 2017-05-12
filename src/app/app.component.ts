@@ -3,7 +3,7 @@ import { Component }          from '@angular/core';
 @Component({
   selector: 'my-app',
   template: `
-    <img id="logo" style="text-align: center;" src="../../img/logo.png" alt="FIU AlertSandBox" />
+    <img id="logo" align = left src="../assets/image/logo.png"/>
     <h1>{{title}}</h1>
     <nav>
       <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>

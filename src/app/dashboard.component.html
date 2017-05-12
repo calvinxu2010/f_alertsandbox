@@ -1,3 +1,4 @@
+<!-- header od table -->
                     <div class="row">
                       <div class="col-1-5">
                         <div class="tile-stats">
@@ -30,4 +31,54 @@
                           <h3>Optional KPI</h3>
                         </div>
                       </div>
-                    </div>
+                    </div> 
+
+
+ <!-- smart table -->
+ <div class="widgets">
+
+  <div class="row">
+    <div class="col-md-12">
+      <div ba-panel ba-panel-title="Smart Table With Filtering, Sorting And Pagination" ba-panel-class="with-scroll">
+
+<div class="horizontal-scroll">
+
+  <table class="table" st-table="configTableData" st-safe-src="activeVersion.scenarios">
+    <thead>
+    <tr class="sortable">
+      <th class="table-id">Scenario Id</th>
+      <th>Scenario Name</th>
+      <th class="table-risk-score">Severity Score</th>
+      <th>Shelf Life</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th><input st-search="scenarioName" placeholder="Search Scenario Name" class="input-sm form-control search-input"
+                 type="search"/></th>
+      <th></th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="item in configTableData" class="editable-tr-wrap">
+      <td class="table-id">{{item.scenarioId}}</td>
+      <td><span  blur="cancel">{{item.scenarioName}}</span></td>
+      <td><span  editable-text="item.severityScore" blur="cancel">{{item.severityScore}}</span></td>
+      <td><span  editable-text="item.shelfLife" blur="cancel">{{item.shelfLife}}</span></td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+      <td colspan="6" class="text-center">
+        <div st-pagination="" st-items-by-page="smartTablePageSize" st-displayed-pages="5"></div>
+      </td>
+    </tr>
+    </tfoot>
+  </table>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+ </div>  

@@ -16,7 +16,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "\n    <img id=\"logo\" style=\"text-align: center;\" src=\"../../img/logo.png\" alt=\"FIU AlertSandBox\" />\n    <h1>{{title}}</h1>\n    <nav>\n      <a routerLink=\"/dashboard\" routerLinkActive=\"active\">Dashboard</a>\n      <!--<a routerLink=\"/heroes\" routerLinkActive=\"active\">Heroes</a>\n      <a routerLink=\"/alert\" routerLinkActive=\"active\">Alert</a>-->\n      <a routerLink=\"/report\" routerLinkActive=\"active\">Report</a>\n      <a routerLink=\"/configuration\" routerLinkActive=\"active\">Configuration</a>\n      <a routerLink=\"/admin\" routerLinkActive=\"active\">Admin</a>\n    </nav>\n    <router-outlet></router-outlet>\n  ",
+        template: "\n    <img id=\"logo\" align = left src=\"../assets/image/logo.png\"/>\n    <h1>{{title}}</h1>\n    <nav>\n      <a routerLink=\"/dashboard\" routerLinkActive=\"active\">Dashboard</a>\n      <!--<a routerLink=\"/heroes\" routerLinkActive=\"active\">Heroes</a>\n      <a routerLink=\"/alert\" routerLinkActive=\"active\">Alert</a>-->\n      <a routerLink=\"/report\" routerLinkActive=\"active\">Report</a>\n      <a routerLink=\"/configuration\" routerLinkActive=\"active\">Configuration</a>\n      <a routerLink=\"/admin\" routerLinkActive=\"active\">Admin</a>\n    </nav>\n    <router-outlet></router-outlet>\n  ",
         styleUrls: ['./app.component.css']
     })
 ], AppComponent);
