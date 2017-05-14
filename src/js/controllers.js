@@ -5,7 +5,7 @@
 var loginModule = angular.module('loginModule', []);
 loginModule.controller('loginCtrl', ['$scope', function($scope){
     $scope.userInfo = {
-        email: 'sample@bmo.com',
+        email: 'firstName.lastName@bmo.com',
         password: '12345679'
     };
     $scope.setFormData = function(){
@@ -120,6 +120,11 @@ BookListModule.controller('BookListCtrl', ['$scope', '$http', '$state', '$stateP
         //-------- page attribute ----------------
         enablePagination: true, //Whether the page, the default is true
         enablePaginationControls: true, //Use the default to the bottom of the page
+        multiSelect: false,
+        enableRowSelection: true,
+        enablCellSelection: true,
+        enableCellEdit: true,
+        enablePinning: true,
         paginationPageSizes: [5, 10, 15], //Each page shows the number of options
         paginationPageSize: 5, //Shows the number of each page
         paginationCurrentPage:1, //current page

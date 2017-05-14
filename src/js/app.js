@@ -5,7 +5,7 @@
 
 
 
-var bookStoreApp = angular.module('bookStoreApp', ['ui.router', 'ui.grid','ui.grid.pagination', 'BookListModule', 'BookDetailModule', 'loginModule', 'addBookModule']);
+var alertSandBox = angular.module('alertSandBox', ['ui.router', 'ui.grid','ui.grid.pagination', 'BookListModule', 'BookDetailModule', 'loginModule', 'addBookModule']);
 
 /**
  * Because the whole application will deal with the routing，So here are the $state and $stateParams The two objects put into $rootScope，Convenient place other references and injection.
@@ -23,12 +23,12 @@ var bookStoreApp = angular.module('bookStoreApp', ['ui.router', 'ui.grid','ui.gr
 //$stateParams status parapeters，$stateParams can provide controller or service the separate parts of the url.
 
 
-bookStoreApp.run(function($rootScope, $state, $stateParams){
+alertSandBox.run(function($rootScope, $state, $stateParams){
 	$rootScope.$state = $state;
 	$rootScope.$stateParams = $stateParams;
 });
 
-
+  
 /**
  * Confihure router
  * Note that there is ui-router，Instead of ng native routing.
@@ -37,7 +37,7 @@ bookStoreApp.run(function($rootScope, $state, $stateParams){
  * @param  {[type]} $urlRouterProvider
  * @return {[type]}
  */
-bookStoreApp.config(function($stateProvider, $urlRouterProvider) {
+alertSandBox.config(function($stateProvider, $urlRouterProvider) {
     // If there is no match to other routing, the direct return to the home page
     $urlRouterProvider.otherwise('/index');
     // Routing and configuration
